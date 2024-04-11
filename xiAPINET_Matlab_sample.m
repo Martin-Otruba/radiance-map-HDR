@@ -7,15 +7,15 @@ myCam=xiApi.NET.xiCam;      % Initialize camera
 NUM_OF_FRAMES = 1000;       % how many frames will be shown in preview
 
 OpenDevice(myCam,0);
-myCam.SetParam(xiApi.NET.PRM.EXPOSURE ,10000);
+myCam.SetParam(xiApi.NET.PRM.EXPOSURE ,100000);
 
 %% uncomment desired image format
 
-myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.RAW8);
+% myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.RAW8);
 % myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.RAW16);
 % myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.MONO8);
 % myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.MONO16);
-% myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.RGB24);
+ myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.RGB24);
 % myCam.SetParam(xiApi.NET.PRM.IMAGE_DATA_FORMAT, xiApi.NET.IMG_FORMAT.RGB32);
 
 %%
